@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: #1a535c;
+}
+.rules {
+  width: 100%;
+  height: 100%;
+  background-color: #1a535c;
+  color: #ffe66d;
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: circle 0.5s forwards;
+}
+.close {
+  background-color: #ffe66d;
+  width: 15vw;
+  height: 5vw;
+  border-radius: 0;
+  color: black;
+  position: fixed;
+  border: solid 3px #black;
+  font-size: 1.5vw;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: circle 3s forwards;
+}
+h1 {
+  padding: 10%;
+  font-size: 3vw;
+}
+
+nav {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* border: solid black 5px; */
+}
+
+.menu {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 70vh;
+  width: 70vh;
+  border: solid 4px #96b0b4;
+  background-color: #f1faee;
+  min-height: 70vh;
+  border-radius: 50%;
+  margin-top: 5vh;
+}
+.result,
+.result2,
+.winNumbers,
+.price,
+.YourMoney,
+.winMoneyAll {
+  position: relative;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vh;
+  height: 4vh;
+
+  display: flex;
+  border-radius: 10px;
+  background-color: #96b0b4;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: solid 1px #264653;
+}
+.inputButton {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  background-color: #ffe66d;
+}
+input {
+  position: fixed;
+  border: solid #82a1a6;
+  width: 35px;
+  font-size: 20px;
+  height: 35px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: #96b0b4;
+  text-align: center;
+}
+.deletYourNumbers {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffe66d;
+}
+button {
+  /* border-radius: 10px; */
+  border: 1px solid black;
+  font-size: 1.82vh;
+  width: 10vh;
+  background-color: #ffe66d;
+  height: 6vh;
+  cursor: pointer;
+  animation-delay: 5s;
+  animation: button 0.5s forwards;
+  border: solid 2px 264653;
+}
+.ButtonRandom {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 6vh;
+}
+.task {
+  margin-top: 4vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.task1 {
+  margin-top: 2vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.circle {
+  position: relative;
+
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  margin: 4vh;
+  width: 4vh;
+  height: 4vh;
+  padding: 4vh;
+  background-color: #fff5c9;
+  color: black;
+  line-height: 4vh;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: underline;
+  border: solid black 1px;
+  font-size: 22px;
+  animation: circle 0.5s forwards;
+}
+
+button:hover {
+  background-color: #fff1af;
+  color: black;
+}
+.close:hover {
+  color: black;
+  background-color: #fff1af;
+}
+@keyframes circle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes button {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
