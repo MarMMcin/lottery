@@ -76,7 +76,6 @@ const addElement = () => {
       div.setAttribute("id", "circle");
       div.textContent = number;
 
-      console.log(div);
       arr.push(number);
     }
 
@@ -144,7 +143,7 @@ start = () => {
     return winMoney.reduce((x, y) => x + y);
   };
   const arr2 = arr.filter(element => yourNumbArr.includes(element));
-  console.log(arr2);
+
   if (arr.length > 5) {
     winNumbers.innerHTML = ` You roll ${arr2.length} ${nu()} ${arr2.sort(
       function(a, b) {
