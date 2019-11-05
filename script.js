@@ -20,7 +20,6 @@ const closed = () => {
 
 const deleteArr = () => {
   removeTask();
-  console.log("click");
   yourNumbArr.splice(0, 6);
   result2.innerHTML = "";
 };
@@ -34,6 +33,7 @@ const addTask = e => {
       return;
     }
   }
+
   if (yourNumbArr.length > 5) {
     return;
   } else if (numberInInput !== "") {
@@ -57,6 +57,7 @@ const removeTask = () => {
   price.innerHTML = "";
 };
 const addElement = () => {
+  if (yourNumbArr.length < 6) return alert("PLEASE ENTER YOUR LUCKY NUMBERS");
   if (yourNumbArr.length > 5) {
     if (arr.length > 5 || winMoney.reduce((x, y) => x + y) < 20) {
       return;
@@ -75,7 +76,6 @@ const addElement = () => {
       div.setAttribute("id", "circle");
       div.textContent = number;
 
-      console.log(div);
       arr.push(number);
     }
 
@@ -143,7 +143,7 @@ start = () => {
     return winMoney.reduce((x, y) => x + y);
   };
   const arr2 = arr.filter(element => yourNumbArr.includes(element));
-  console.log(arr2);
+
   if (arr.length > 5) {
     winNumbers.innerHTML = ` You roll ${arr2.length} ${nu()} ${arr2.sort(
       function(a, b) {
